@@ -1,0 +1,55 @@
+/* Match sidebar folder labels to graph color groups. Nested folders inherit
+   their numbered root folder's color. */
+.nav-folder-title[data-path="1 - Rough Notes"],
+.nav-folder-title[data-path^="1 - Rough Notes/"] {
+	color: #95b74e;
+}
+
+.nav-folder-title[data-path="2 - Source Materials"],
+.nav-folder-title[data-path^="2 - Source Materials/"] {
+	color: #8c96d9;
+}
+
+.nav-folder-title[data-path="3 - Tags"],
+.nav-folder-title[data-path^="3 - Tags/"] {
+	color: #da975d;
+}
+
+.nav-folder-title[data-path="7 - Goals"],
+.nav-folder-title[data-path^="7 - Goals/"] {
+	color: #b579d2;
+}
+
+.nav-folder-title[data-path="4 - Full Notes"],
+.nav-folder-title[data-path^="4 - Full Notes/"] {
+	color: #18c1cd;
+}
+
+.nav-folder-title[data-path="5 - Dictionary"],
+.nav-folder-title[data-path^="5 - Dictionary/"] {
+	color: #ed5aa8;
+}
+
+.nav-folder-title[data-path="6 - Public Notes"],
+.nav-folder-title[data-path^="6 - Public Notes/"] {
+	color: #6fafd8;
+}
+
+/* Distinguish the two dashboard notes in the file explorer. */
+.nav-file-title[data-path="README.md" i] .nav-file-title-content {
+	color: #d6bf62;
+}
+
+.nav-file-title[data-path="TASKS.md" i] .nav-file-title-content {
+	color: #b579d2;
+}
+
+.nav-file-title[data-path="README.md" i] .nav-file-title-content::before {
+	content: "\1F4D6";
+	margin-inline-end: 0.4em;
+}
+
+.nav-file-title[data-path="TASKS.md" i] .nav-file-title-content::before {
+	content: "\1F4CB";
+	margin-inline-end: 0.4em;
+}

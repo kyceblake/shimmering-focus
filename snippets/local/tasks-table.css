@@ -1,0 +1,14 @@
+/* Keep the native dropdown chrome inside the Bases grid lines. */
+.bases-td:is([data-property="note.progress"], [data-property="note.status"], [data-property="note.priority"]) > select.custom-selectors-plugin-select.mod-base {
+  inset: 1px;
+  border: none;
+  box-shadow: none;
+  width: calc(100% - 2px);
+  height: calc(100% - 2px);
+  clip-path: inset(0);
+}
+
+/* Let short embedded tables use the space reserved for a vertical scrollbar. */
+.bases-view:has(.bases-td:is([data-property="note.progress"], [data-property="note.status"], [data-property="note.priority"])) {
+  scrollbar-gutter: auto;
+}

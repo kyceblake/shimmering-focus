@@ -1,0 +1,10 @@
+/* Shimmering Focus: keep PDF scrollbars clear of the rotated breadcrumb. */
+body:not(.normal-header-bar, .is-mobile) .mod-root
+.workspace-leaf-content[data-type="pdf"] .view-header-title-container {
+  display: none;
+}
+
+body:not(.normal-header-bar, .is-mobile) .mod-root
+.workspace-leaf-content[data-type="pdf"] .pdf-viewer {
+  margin-right: 0;
+}

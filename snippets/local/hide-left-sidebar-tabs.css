@@ -1,0 +1,20 @@
+/* Hide tab header strip in left sidebar — file explorer only, no chrome */
+.workspace-split.mod-left-split .workspace-tab-header-container {
+  display: none !important;
+}
+
+/* Push content below macOS traffic-light buttons + make top strip draggable */
+.workspace-split.mod-left-split .workspace-leaf-content {
+  position: relative;
+  padding-top: 36px;
+}
+.workspace-split.mod-left-split .workspace-leaf-content::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 36px;
+  -webkit-app-region: drag;
+  z-index: 1;
+}
